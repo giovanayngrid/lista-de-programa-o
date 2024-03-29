@@ -1,0 +1,40 @@
+#atividade4
+valor_hora=float(input('qual seu valor da sua hora trabalhada?'))
+hora_trabalhada=float(input('quantas horas você trabalha no mês?'))
+bruto=hora_trabalhada*valor_hora
+if bruto <= 900:
+    desconto=0
+    real1=bruto*(desconto/100)
+    sindicato=3
+    real2=bruto*(sindicato/100)
+    FGTS=11
+    real3=bruto*(FGTS/100)
+elif bruto <=1500:
+    desconto=5
+    real1=bruto*(desconto/100)
+    sindicato=3
+    real2=bruto*(sindicato/100)
+    FGTS=11
+    real3=bruto*(FGTS/100)
+elif bruto <=2500:
+    desconto=10
+    real1=bruto*(desconto/100)
+    sindicato=3
+    real2=bruto*(sindicato/100)
+    FGTS=11
+    real3=bruto*(sindicato/100)
+elif bruto > 2500:
+    desconto=20
+    real1=bruto*(desconto/100)
+    sindicato=3
+    real2=bruto*(sindicato/100)
+    FGTS=11
+    real3=bruto*(FGTS/100)
+liquido=bruto-((desconto/100)+(sindicato/100))
+total_descontos= real1+real2
+print('salario bruto: R$',bruto)
+print('(-)IR (',desconto,'%): R$',real1)
+print('(-)Sindicato(',sindicato,'%): R$',real2)
+print('(-)FGTS(',FGTS,'%): R$',real3)
+print('Total dos descontos: R$',total_descontos)
+print('Salário líquido:R$',liquido)
