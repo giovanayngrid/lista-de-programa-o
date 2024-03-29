@@ -1,0 +1,16 @@
+#atividade5
+a=int(input('digite um numero:'))
+b=int(input('digite outro numero:'))
+c=int(input('digite mais um numero:'))
+d=b**2-4*a*c
+if a==0:
+    print('a equação não é de segundo grau')
+elif d<=0:
+  print('delta não tem raiz real')
+elif d==0:
+    x = -b / 2*a
+    print('a equação tem apenas uma raiz real, igual a',x)
+elif d>0:    
+      x1=(-b+(+d**0.5))/2*a
+      x2=(-b+(-d**0.5))/2*a
+      print('x1=',x1,'x2=',x2)
