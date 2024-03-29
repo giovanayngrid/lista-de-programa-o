@@ -1,0 +1,13 @@
+#ativiadade3
+salario=float(input('qual seu atual salário?'))
+if salario <= 280.00:
+    aumento=20
+elif salario <= 700.00:
+    aumento=15
+elif salario <= 1500:
+    aumento=10
+elif salario >= 1500:
+    aumento=5
+valor_aumento=salario*(aumento/100)
+valor_atualizado=salario+valor_aumento
+print('seu salário era de',salario,'houve um amento de',aumento,'%, e agora seu salário passa a ser de',valor_atualizado)
