@@ -1,0 +1,13 @@
+#atividade6
+numero=int(input('digite um número até 1000: '))
+centena=numero//100
+dezena=(numero%100)//10
+unidade=numero%10
+if numero<=9:
+    print(unidade,'unidades.')
+elif numero<=90:
+    print(dezena,'dezenas e',unidade,'unidades.')
+elif numero <=1000:
+    print(centena,'centenas,',dezena,'dezenas e',unidade,'unidades.')
+elif centena==0:
+    print(dezena,'dezenas e',unidade,'unidades.')
